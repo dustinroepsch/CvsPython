@@ -5,9 +5,9 @@
 int main() {
 	srand(time(NULL));
 
-	int donePlaying = 0;// the program just started, so we obviously want to play;
+	int done_playing = 0;// the program just started, so we obviously want to play;
 
-	while (!donePlaying) {
+	while (!done_playing) {
 		int secret_number = rand() % 100; //gives us a random number in the range [0,99] inclusive
 		int guess;
 		printf("I've picked a number between 0 and 99 inclusive, try to guess it!\n");
@@ -26,7 +26,7 @@ int main() {
 		char play_again_choice;
 		scanf(" %c", &play_again_choice);
 		if (play_again_choice == 'n' || play_again_choice == 'N') {
-			donePlaying = 1;
+			done_playing = 1;
 		}
 	}
 
