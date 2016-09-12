@@ -3,7 +3,7 @@ def main():
     vowels = "aeiou"
     print("".join(c for c in original_string if c not in vowels and c != ' '))
     print("".join(c for c in original_string if c in vowels))
-    #more english!!
+    # more english!!
 
 if __name__ == "__main__":
     main()

@@ -5,7 +5,8 @@ def main():
     done_playing = False
     while not done_playing:
         secret_number = randint(0, 99)
-        print("I've picked a number between 0 and 99 inclusive, try to guess it!")
+        print(
+            "I've picked a number between 0 and 99 inclusive, try to guess it!")
         guess = -1  # the secrent number can't be negative one.
         while (guess != secret_number):
             guess = int(input("Enter a guess!"))
