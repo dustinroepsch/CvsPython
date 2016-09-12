@@ -45,4 +45,10 @@ int main(void) {
     /* Print results */
     printf("%s", disemvoweled);
     printf("%s\n", vowels);
+
+    free(original);
+    free(disemvoweled);
+    free(vowels);
+
+    return 0;
 }
